@@ -1,0 +1,55 @@
+/* Global Styling */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Hero Section */
+#hero {
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay over hero background */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Ensure hero content is above overlay */
+#hero .container {
+  z-index: 1;
+}
+
+/* Portfolio Card Hover Effect */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Active link styling (if using JS scroll spy) */
+.navbar .nav-link.active {
+  font-weight: bold;
+}
+
+/* Section spacing for anchor jumps */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Optional: Responsive image fallback */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
